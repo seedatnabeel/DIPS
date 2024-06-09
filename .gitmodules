@@ -1,0 +1,3 @@
+[submodule "src/Datagnosis"]
+	path = src/Datagnosis
+	url = https://github.com/vanderschaarlab/Datagnosis
