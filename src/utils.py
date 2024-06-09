@@ -245,7 +245,7 @@ def get_train_test_unlabeled_for_multilabel(
     return x_train, y_train, x_test, y_test, x_unlabeled
 
 
-def process_results(results_list, numIters, end_score=True, extracted_iteration = 0):
+def process_results(results_list, numIters, end_score=True, extracted_iteration=0):
     """Process the results returned by run_baseline
 
     Args:
@@ -261,7 +261,6 @@ def process_results(results_list, numIters, end_score=True, extracted_iteration 
 
     df = pd.DataFrame(results_list)
     res = {}
-
 
     for model in list(df.columns):
         metrics = {}
@@ -286,9 +285,16 @@ def process_results(results_list, numIters, end_score=True, extracted_iteration 
             metrics[f"acc_mean"] = np.nanmean(metric)
             metrics[f"acc_se"] = sem(metric)
 
-        elif model in ['ups','pseudo', 'csa','sla','flex']:
-            for key in df[model].values[0].keys(): #This loops through vanilla, diq etc.
-                if key == "vanilla" or key == "diq_full" or key == "diq_begin" or key == "diq_full2":
+        elif model in ["ups", "pseudo", "csa", "sla", "flex"]:
+            for key in (
+                df[model].values[0].keys()
+            ):  # This loops through vanilla, diq etc.
+                if (
+                    key == "vanilla"
+                    or key == "diq_full"
+                    or key == "diq_begin"
+                    or key == "diq_full2"
+                ):
                     metric = [mydict[key] for mydict in df[model].values]
                     if model == "csa":
                         for idx, iter_list in enumerate(metric):
@@ -299,7 +305,9 @@ def process_results(results_list, numIters, end_score=True, extracted_iteration 
                                 iter_list.extend(extra)
                                 metric[idx] = np.array(iter_list)
 
-                    metric = [inner_list for inner_list in metric if len(inner_list) > 1]
+                    metric = [
+                        inner_list for inner_list in metric if len(inner_list) > 1
+                    ]
 
                     metric = np.array(metric)
 
@@ -307,7 +315,9 @@ def process_results(results_list, numIters, end_score=True, extracted_iteration 
                         metrics[f"{key}_mean"] = np.nanmean(metric[:, -1])
                         metrics[f"{key}_se"] = sem(metric[:, -1])
                     else:
-                        metrics[f"{key}_mean"] = np.nanmean(metric[:, extracted_iteration])
+                        metrics[f"{key}_mean"] = np.nanmean(
+                            metric[:, extracted_iteration]
+                        )
                         metrics[f"{key}_se"] = sem(metric[:, extracted_iteration])
 
         res[model] = metrics
