@@ -57,7 +57,7 @@ To run the tabular experiments one can run the bash scripts found in the scripts
 To run the notebook experiments one can run any of the Jupyter notebooks (.ipynb) found in the ``notebooks`` folder
 
 ### Computer Vision 
-
+TODO - FixMatch
 
 ## Citing
 
