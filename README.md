@@ -11,7 +11,7 @@ This repository contains the implementation of DIPS, a data-centric method to im
 
 DIPS improves a variety of state-of-the-art psuedo-labeling algorithms (semi-supervised learning algorithms) via data-centric insights.
 
-For more details, please read our [DMLR paper](link): *You can’t handle the (dirty) truth: Data-centric insights improve pseudo-labeling*.
+For more details, please read our [DMLR paper](https://arxiv.org/abs/2302.12238): *You can’t handle the (dirty) truth: Data-centric insights improve pseudo-labeling*.
 
 ## Installation
 1. Clone the repository
@@ -38,14 +38,14 @@ pip install -r requirements.txt
  ```
 
 ## Logging
-Outputs from scripts logged to [Weights and Biases - wandb](https://wandb.ai) for later analysis. An account is required and your WANDB_API_KEY and Entity need to be set in wandb.yaml file provided.
+Outputs from scripts can be logged to [Weights and Biases - wandb](https://wandb.ai). An account is required and your WANDB_API_KEY and Entity need to be set in wandb.yaml file provided.
 
 
 ## Getting started with DIPS
 
 ![image](method.png "How DIPS works")
 
-To get started with DIPS one can try the tutorial.ipynb notebook in the ``notebooks`` folder
+To get started with DIPS one can try the tutorial.ipynb notebook in the root folder
 
 ### Scripts
 To run the tabular experiments one can run the bash scripts found in the scripts folder, with results logged to wandb. For example:
