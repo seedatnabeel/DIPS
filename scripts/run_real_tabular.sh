@@ -5,7 +5,7 @@ numTrials=10
 numIters=10
 # set to zero to use adaptive threshold
 dips_xthresh=0
-seed=0
+seed=0  # run seeds 0, 10, 42, 100, 1000
 project_name="dips_all_test"
 
 # create runs for the following sweeps:  
