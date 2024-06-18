@@ -9,7 +9,7 @@ Note: Repository still under construction...
 
 This repository contains the implementation of DIPS, a data-centric method to improve pseudo-labeling for semi-supervised learning, from the paper "You can’t handle the (dirty) truth: Data-centric insights improve pseudo-labeling" 
 
-DIPS improves a variety of state-of-the-art psuedo-labeling algorithms (semi-supervised learning algorithms) via data-centric insights.
+DIPS improves a variety of state-of-the-art pseudo-labeling algorithms (semi-supervised learning algorithms) via data-centric insights.
 
 For more details, please read our [DMLR paper](https://arxiv.org/abs/2302.12238): *You can’t handle the (dirty) truth: Data-centric insights improve pseudo-labeling*.
 
@@ -57,14 +57,19 @@ To run the tabular experiments one can run the bash scripts found in the scripts
 To run the notebook experiments one can run any of the Jupyter notebooks (.ipynb) found in the ``notebooks`` folder
 
 ### Computer Vision 
-TODO - FixMatch
+Details to run DIPS for Computer Vision tasks (such as FixMatch) can be found in the ``fixmatch`` folder. Requirements specific to these experiments are contained therein.
 
 ## Citing
 
 If you use this code, please cite the associated paper:
 
 ```
-TODO
-
+@article{
+dips2024,
+title={You can't handle the (dirty) truth: Data-centric insights improve pseudo-labeling},
+author={Nabeel Seedat and Nicolas Huynh and Fergus Imrie and Mihaela van der Schaar},
+journal={Journal of Data-centric Machine Learning Research},
+year={2024},
+}
 ```
 
