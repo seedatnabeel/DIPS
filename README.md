@@ -43,8 +43,6 @@ Outputs from scripts can be logged to [Weights and Biases - wandb](https://wandb
 
 ## Getting started with DIPS
 
-![image](method.png "How DIPS works")
-
 To get started with DIPS one can try the tutorial.ipynb notebook in the root folder
 
 ### Scripts
