@@ -11,7 +11,7 @@ This repository contains the implementation of DIPS, a data-centric method to im
 
 DIPS improves a variety of state-of-the-art pseudo-labeling algorithms (semi-supervised learning algorithms) via data-centric insights.
 
-For more details, please read our [DMLR paper](https://arxiv.org/abs/2302.12238): *You can’t handle the (dirty) truth: Data-centric insights improve pseudo-labeling*.
+For more details, please read our [DMLR paper](https://openreview.net/forum?id=2tBwcT9z55): *You can’t handle the (dirty) truth: Data-centric insights improve pseudo-labeling*.
 
 ## Installation
 1. Clone the repository
