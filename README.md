@@ -20,7 +20,7 @@ For more details, please read our [DMLR paper](https://openreview.net/forum?id=2
     virtualenv dips_env
 ```
 
-3. (a) Create a new conda environment with Python 3.10. e.g:
+2. (b) Create a new conda environment with Python 3.10. e.g:
 ```shell
     conda create -n dips_env python=3.10
 ```
