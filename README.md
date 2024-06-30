@@ -1,17 +1,15 @@
 # You can’t handle the (dirty) truth: Data-centric insights improve pseudo-labeling
 <!-- 
-[![arXiv](https://img.shields.io/badge/arXiv-2302.12238-b31b1b.svg)](https://arxiv.org/)
+[![arXiv](https://img.shields.io/badge/arXiv-2406.13733-b31b1b.svg)](https://arxiv.org/abs/2406.13733)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/seedatnabeel/DIPS/blob/main/LICENSE) -->
 
 ![image](overview.png "Overview of DIPS")
 
-Note: Repository still under construction...
-
-This repository contains the implementation of DIPS, a data-centric method to improve pseudo-labeling for semi-supervised learning, from the paper "You can’t handle the (dirty) truth: Data-centric insights improve pseudo-labeling" 
+This repository contains the implementation of DIPS, a data-centric method to improve pseudo-labeling under imperfect/noisy 'labeled' data from the paper "You can’t handle the (dirty) truth: Data-centric insights improve pseudo-labeling" 
 
 DIPS improves a variety of state-of-the-art pseudo-labeling algorithms (semi-supervised learning algorithms) via data-centric insights.
 
-For more details, please read our [DMLR paper](https://openreview.net/forum?id=2tBwcT9z55): *You can’t handle the (dirty) truth: Data-centric insights improve pseudo-labeling*.
+For more details, please read our [DMLR paper](https://arxiv.org/abs/2406.13733): *You can’t handle the (dirty) truth: Data-centric insights improve pseudo-labeling*.
 
 ## Installation
 1. Clone the repository
