@@ -1,7 +1,7 @@
 # You can’t handle the (dirty) truth: Data-centric insights improve pseudo-labeling
-<!-- 
+
 [![arXiv](https://img.shields.io/badge/arXiv-2406.13733-b31b1b.svg)](https://arxiv.org/abs/2406.13733)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/seedatnabeel/DIPS/blob/main/LICENSE) -->
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/seedatnabeel/DIPS/blob/main/LICENSE)
 
 ![image](overview.png "Overview of DIPS")
 
